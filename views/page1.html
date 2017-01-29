@@ -1,0 +1,17 @@
+<div ng-controller="page1Controller">
+
+	<table>
+		<tr>
+			<th>Select</th>
+			<th>Student Id</th>
+			<th>Student Name</th>
+		</tr>	
+		<tr ng-repeat="data in tableDate">
+			<td><input type="checkbox" name="select" ng-click="select(data.student_id)"></td>
+			<td>{{data.student_id}}</td>
+			<td>{{data.student_name}}</td>
+		</tr>
+	</table>
+			<button ng-click="show()">Show</button>
+
+</div>
